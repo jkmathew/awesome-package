@@ -1,6 +1,7 @@
 name: Swift
 
 on:
+  push:
   pull_request:
 
 jobs:
