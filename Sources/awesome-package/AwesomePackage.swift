@@ -1,5 +1,5 @@
 struct AwesomePackage {
   func randomNumber() -> Int {
-    return 15555
+    return 777777
   }
 }
