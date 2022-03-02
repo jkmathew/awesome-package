@@ -2,6 +2,6 @@ language: swift
 osx_image: xcode12.2
 
 script:
-  swift test
-  git status
-  git log
+  - swift test
+  - git status
+  - git log
