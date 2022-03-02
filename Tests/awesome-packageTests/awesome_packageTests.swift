@@ -3,7 +3,7 @@ import XCTest
 
 final class awesome_packageTests: XCTestCase {
   func testRandom() {
-    print("Running ----------", #function)
+    print("Running ---------- \(AwesomePackage().randomNumber())", #function)
     XCTAssertEqual(AwesomePackage().randomNumber(), 10)
   }
 }
