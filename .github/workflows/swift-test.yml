@@ -11,4 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Run tests
-      run: swift test -Xswiftc "-sdk" -Xswiftc "`xcrun --sdk iphonesimulator --show-sdk-path`" -Xswiftc "-target" -Xswiftc "x86_64-apple-ios15.0-simulator"
+      run: |
+        xcrun --sdk iphonesimulator --show-sdk-path
+        echo "-------->>>>>>>>>>>"
+        swift test -Xswiftc "-sdk" -Xswiftc "`xcrun --sdk iphonesimulator --show-sdk-path`" -Xswiftc "-target" -Xswiftc "x86_64-apple-ios15.0-simulator"
